@@ -7,7 +7,7 @@
 
     position: relative;
 
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
 }
 
 .nav__brand {
@@ -21,7 +21,7 @@
 
 .nav__links {
     position: absolute;
-    right: 9px;
+    right: 19px;
     top: 10px;
 }
 
@@ -36,6 +36,7 @@
     height: 28px;
 
     color: var(--main-color);
+    cursor: pointer;
 }
 
 /* search box */
@@ -52,6 +53,8 @@
     justify-content: space-between;
 
     width: 80%;
+    min-width: 263px;
+    max-width: 263px;
     height: 48px;
     padding: 0 1.5rem;
 
@@ -73,7 +76,7 @@
     background: none;
 }
 
-.search__box input::placeholder{
+.search__box input::placeholder {
     font-family: 'jakarta';
     font-weight: 500;
     font-size: 1.4rem;
@@ -84,7 +87,12 @@
     border-radius: 10px;
 
     width: 15%;
+    max-width: 48px;
+    min-width: 48px;
+
     height: 48px;
+    max-height: 48px;
+    min-height: 48px;
 
     display: flex;
     align-items: center;
@@ -93,3 +101,74 @@
 
 /* links */
 .nav__links {}
+
+.link__user {
+    cursor: pointer;
+}
+
+.links {
+    position: relative;
+    background-color: #ffffff;
+    width: fit-content;
+    height: fit-content;
+}
+
+.links span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    position: absolute;
+
+    border-radius: 50%;
+    border: 1px solid var(--main-bd-color);
+
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.links span.disable {
+    transform: translate(-7.5px, -38.5px);
+    z-index: -1;
+    opacity: 0;
+
+}
+
+.links span.acitve {
+    opacity: 1;
+    z-index: 4;
+}
+
+.links span.active:nth-child(1) img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.links span.active:nth-child(1) {
+    transform: translate(-70px, -39.9px);
+    transition-delay: .1s;
+    background-color: #ffffff;
+}
+
+.links span.active:nth-child(2) {
+    transform: translate(-66px, 4.5px);
+    transition-delay: .2s;
+    background-color: #ffffff;
+}
+
+.links span.active:nth-child(3) {
+    transform: translate(-44px, 43px);
+    transition-delay: .3s;
+    background-color: #ffffff;
+}
+
+
+.links span.active:nth-child(4) {
+    transform: translate(0px, 50px);
+    transition-delay: .4s;
+    background-color: #ffffff;
+}
