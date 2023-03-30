@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'jakarta', 'Roboto', sans-serif;
+}
+
+input,
+textarea,
+button,
+select,
+a,
+div {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: 'jakarta', 'Roboto', sans-serif;
+    letter-spacing: .01rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --second-bg-color: #F6F7F9;
+
+    --main-color: #3563E9;
+    --second-color: #1A202C;
+    --third-color: #90A3BF;
+    --light-color: #FFFFFF;
+
+    --main-icon-color: #596780;
+    --second-icon-color: #ED3F3F;
+
+    --main-bd-color: rgba(195, 212, 233, 0.4);
+}
+
+@font-face {
+    font-family: 'jakarta';
+    src: url('../public/font/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+    font-display: auto;
+}
