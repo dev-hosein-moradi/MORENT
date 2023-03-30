@@ -141,7 +141,7 @@
     z-index: 4;
 }
 
-.links span.active:nth-child(1) img {
+.links span:nth-child(1) img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -149,26 +149,26 @@
 }
 
 .links span.active:nth-child(1) {
-    transform: translate(-70px, -39.9px);
+    transform: translate(-75px, -39.9px);
     transition-delay: .1s;
     background-color: #ffffff;
 }
 
 .links span.active:nth-child(2) {
-    transform: translate(-66px, 4.5px);
+    transform: translate(-80px, 5px);
     transition-delay: .2s;
     background-color: #ffffff;
 }
 
 .links span.active:nth-child(3) {
-    transform: translate(-44px, 43px);
+    transform: translate(-45px, 35px);
     transition-delay: .3s;
     background-color: #ffffff;
 }
 
 
 .links span.active:nth-child(4) {
-    transform: translate(0px, 50px);
+    transform: translate(0px, 25px);
     transition-delay: .4s;
     background-color: #ffffff;
 }

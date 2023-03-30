@@ -10,7 +10,6 @@ import Hosein from "../../assets/image/hosein-prof.jpg";
 
 const Navbar = () => {
   const [openLinks, setOpenLinks] = useState(false);
-  console.log(openLinks);
   return (
     <nav className="Navbar">
       <div className="nav__brand">
