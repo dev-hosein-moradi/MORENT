@@ -1,0 +1,130 @@
+.Ads__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    overflow: hidden;
+
+    transform: translateY(-170px);
+}
+
+.ads__box {
+    width: 327px;
+    min-width: 327px;
+    height: 232px;
+    min-height: 232px;
+    border-radius: 10px;
+
+    position: relative;
+    margin: 0 50px;
+
+    transform: translateX(-215px);
+    animation: ads__slider 10s infinite linear forwards;
+    animation-delay: 1s;
+    transition-delay: 1s;
+}
+
+@keyframes ads__slider {
+    0% {
+        transform: translateX(-215px);
+    }
+
+    25% {
+        transform: translateX(215px);
+    }
+
+    50% {
+        transform: translateX(215px);
+    }
+
+    75% {
+        transform: translateX(-215px);
+    }
+
+    100% {
+        transform: translateX(-215px);
+    }
+}
+
+.box__bg {
+    position: absolute;
+    z-index: -1;
+    max-width: 327px;
+    max-height: 232px;
+}
+
+.box__content {
+    z-index: 1;
+    padding: 1rem;
+}
+
+.ads__box:nth-child(2) {
+    background-color: var(--main-color);
+    background-size: contain;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+}
+
+.ads__box:nth-child(1) {
+    background-color: var(--third-bg-color);
+    background-size: contain;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+}
+
+.ads__box h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: .2px;
+    line-height: 2.4rem;
+
+    color: var(--light-color);
+}
+
+.ads__box p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .2px;
+    line-height: 1.9rem;
+
+    margin: 1.5rem 0;
+    max-width: 250px;
+
+    color: var(--light-color);
+}
+
+.ads__box button {
+    width: 128px;
+    height: 44px;
+    border-radius: 4px;
+    padding: 0 2rem;
+
+    border: none;
+    outline: none;
+
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .4px;
+
+    color: var(--light-color);
+    cursor: pointer;
+}
+
+.ads__box:nth-child(2) button {
+    background-color: var(--third-bg-color);
+}
+
+.ads__box:nth-child(1) button {
+    background-color: var(--main-color);
+}
+
+.content__image {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 85px;
+    max-height: 85px;
+    z-index: 1;
+}

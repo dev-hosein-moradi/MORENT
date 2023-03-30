@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import LoadingSpinner from "../../components/loading-spinner/LoadingSpinner";
 const Navbar = lazy(() => import("../../components/navbar/Navbar"));
+const Ads = lazy(() => import("../../components/advertisement/Ads"));
 
 /* 
  1--> Navbar
@@ -16,6 +17,7 @@ const Main = () => {
       <Suspense fallback={<LoadingSpinner />}>
         {/* navbar */}
         <Navbar />
+        <Ads />
 
         {/* content */}
 
