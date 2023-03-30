@@ -1,13 +1,14 @@
 .Ads__wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
 
     width: 100vw;
     overflow: hidden;
+    padding: 0 2rem;
 
-    transform: translateY(-170px);
+    transform: translateY(-180px);
 }
 
 .ads__box {
@@ -58,6 +59,7 @@
 .box__content {
     z-index: 1;
     padding: 1rem;
+    height: 100%;
 }
 
 .ads__box:nth-child(2) {
@@ -126,5 +128,225 @@
     justify-content: center;
     height: 85px;
     max-height: 85px;
-    z-index: 1;
+    z-index: 2;
+}
+
+
+@media screen and (min-width: 411px) {
+    .ads__box {
+        width: 370px;
+        min-width: 370px;
+        height: 232px;
+        min-height: 232px;
+
+        transform: translateX(-235px);
+    }
+
+    @keyframes ads__slider {
+        0% {
+            transform: translateX(-235px);
+        }
+
+        25% {
+            transform: translateX(235px);
+        }
+
+        50% {
+            transform: translateX(235px);
+        }
+
+        75% {
+            transform: translateX(-235px);
+        }
+
+        100% {
+            transform: translateX(-235px);
+        }
+    }
+}
+
+
+@media screen and (min-width: 550px) {
+    .ads__box {
+        width: 450px;
+        min-width: 450px;
+        height: 232px;
+        min-height: 232px;
+
+        transform: translateX(-275px);
+    }
+
+    @keyframes ads__slider {
+        0% {
+            transform: translateX(-275px);
+        }
+
+        25% {
+            transform: translateX(275px);
+        }
+
+        50% {
+            transform: translateX(275px);
+        }
+
+        75% {
+            transform: translateX(-275px);
+        }
+
+        100% {
+            transform: translateX(-275px);
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .ads__box {
+        width: 450px;
+        min-width: 450px;
+        height: 232px;
+        min-height: 232px;
+
+        margin: 0 100px;
+
+        transform: translateX(-330px);
+    }
+
+    @keyframes ads__slider {
+        0% {
+            transform: translateX(-340px);
+        }
+
+        25% {
+            transform: translateX(310px);
+        }
+
+        50% {
+            transform: translateX(310px);
+        }
+
+        75% {
+            transform: translateX(-340px);
+        }
+
+        100% {
+            transform: translateX(-340px);
+        }
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .Ads__wrapper {
+        justify-content: space-between;
+        /* width: 100%; */
+    }
+
+    .ads__box {
+        width: 327px;
+        min-width: 327px;
+        height: 232px;
+        min-height: 232px;
+        margin: 0;
+
+        z-index: 0;
+
+        transform: unset;
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Ads__wrapper {
+        padding: 2rem;
+
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .ads__box {
+        width: 380px;
+        min-width: 380px;
+        height: 300px;
+        min-height: 300px;
+
+    }
+
+    .box__bg {
+        max-width: 380px;
+        max-height: 300px;
+        bottom: 0;
+    }
+
+    .box__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    .ads__box h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 4.8rem;
+    }
+
+    .ads__box p {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 2.4rem;
+        max-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .ads__box {
+        width: 480px;
+        min-width: 480px;
+        height: 360px;
+        min-height: 360px;
+    }
+
+    .box__bg {
+        max-width: 380px;
+        max-height: 300px;
+        bottom: 0;
+    }
+
+    .ads__box h2 {
+        font-size: 2.7rem;
+        line-height: 4.8rem;
+    }
+
+    .ads__box p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        max-width: 400px;
+    }
+}
+
+
+@media screen and (min-width: 1366px) {
+    .ads__box {
+        width: 650px;
+        min-width: 650px;
+        height: 360px;
+        min-height: 360px;
+    }
+
+    .box__bg {
+        max-width: 380px;
+        max-height: 300px;
+        bottom: 0;
+    }
+
+    .ads__box h2 {
+        font-size: 2.7rem;
+        line-height: 4.8rem;
+    }
+
+    .ads__box p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        max-width: 400px;
+    }
 }

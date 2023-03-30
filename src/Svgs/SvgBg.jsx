@@ -1,10 +1,11 @@
 import React from "react";
 
-const SvgBg = () => {
+const SvgBg = (props) => {
   return (
     <svg
       width="307"
       height="232"
+      {...props}
       viewBox="0 0 307 232"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
