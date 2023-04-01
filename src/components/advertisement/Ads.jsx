@@ -23,16 +23,13 @@ const Ads = () => {
       {adsDetail?.map((ads) => {
         return (
           <div key={ads?.id} className="ads__box">
-            <div className="box__bg">
-              <SvgBg />
-            </div>
             <div className="box__content">
               <h2>{ads?.title || null}</h2>
               <p>{ads?.desc || null}</p>
               <button>Rental Car</button>
 
               <div className="content__image">
-                <SvgCar1 width={180} height={60} />
+                <SvgCar1 width={320} height={70} />
               </div>
             </div>
           </div>

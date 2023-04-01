@@ -49,13 +49,6 @@
     }
 }
 
-.box__bg {
-    position: absolute;
-    z-index: -1;
-    max-width: 327px;
-    max-height: 232px;
-}
-
 .box__content {
     z-index: 1;
     padding: 1rem;
