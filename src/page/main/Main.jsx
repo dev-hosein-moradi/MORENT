@@ -3,6 +3,7 @@ import "./main.css";
 import LoadingSpinner from "../../components/loading-spinner/LoadingSpinner";
 const Navbar = lazy(() => import("../../components/navbar/Navbar"));
 const Ads = lazy(() => import("../../components/advertisement/Ads"));
+const Home = lazy(() => import("../../components/layout/home-page/Home"));
 
 /* 
  1--> Navbar
@@ -20,6 +21,8 @@ const Main = () => {
         <Navbar />
         <div className="Main__body">
           <Ads />
+
+          <Home />
         </div>
 
         {/* content */}
