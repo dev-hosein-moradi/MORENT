@@ -1,0 +1,55 @@
+import React, { forwardRef, useState } from "react";
+import "./pickUpForm.css";
+
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
+const PickUpForm = () => {
+  const [startDate, setStartDate] = useState(new Date());
+  const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
+    <button className="example-custom-input" onClick={onClick} ref={ref}>
+      {value}
+      <i className="arrow down"></i>
+    </button>
+  ));
+  
+  return (
+    <div className="pickUp__form">
+      <div className="form__title">
+        <span></span>
+        <h3>Pick - Up</h3>
+      </div>
+
+      <div className="form__inputs">
+        <div className="input__location">
+          <label htmlFor="loc-select">Location</label>
+
+          <select name="loc" id="loc-select">
+            <option value="london">London</option>
+            <option value="oxford">Oxford</option>
+            <option value="cambridge">Cambridge</option>
+            <option value="brighton">Brighton</option>
+            <option value="bristol">Bristol</option>
+            <option value="manchester">Manchester</option>
+          </select>
+        </div>
+
+        <div className="input__date">
+          <label htmlFor="date-select">Date</label>
+
+          <DatePicker
+            selected={startDate}
+            closeOnScroll={true}
+            dateFormat="yyyy/MM/dd"
+            onChange={(date) => setStartDate(date)}
+            customInput={<ExampleCustomInput />}
+          />
+        </div>
+
+        <div className="input__time"></div>
+      </div>
+    </div>
+  );
+};
+
+export default PickUpForm;

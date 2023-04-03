@@ -22,10 +22,10 @@ const Main = () => {
         <div className="Main__body">
           <Ads />
 
+          {/* content */}
+
           <Home />
         </div>
-
-        {/* content */}
 
         {/* footer */}
       </Suspense>

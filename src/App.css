@@ -53,6 +53,6 @@ a {
 
 @font-face {
     font-family: 'jakarta';
-    src: url('../public/font/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+    src: url('/font/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
     font-display: auto;
 }
