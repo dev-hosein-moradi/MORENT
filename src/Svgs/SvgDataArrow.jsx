@@ -8,6 +8,7 @@ const SvgDataArrow = (props) => {
       enable-background="new 0 0 32 32"
       viewBox="0 0 32 32"
       id="data-arrow"
+      fill="#fff"
     >
       <path
         d="M16.44,17.979c-0.45-0.246-1.009-0.077-1.251,0.376l-3.761,7.015L11.425,2.934C11.425,2.417,11.012,2,10.502,2

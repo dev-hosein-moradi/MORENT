@@ -1,6 +1,8 @@
-.pickUp__form {
+.pickUp__form,
+.dropOff__form {
     width: 90%;
     min-width: 327px;
+    max-width: 327px;
     height: 120px;
 
     display: flex;
@@ -12,6 +14,10 @@
 
     padding: 1rem 1.6rem;
     border-radius: 10px;
+}
+
+.dropOff__form {
+    margin-top: -13px;
 }
 
 .form__title {
@@ -152,7 +158,7 @@
     color: #90A3BF;
 }
 
-.react-time-picker__wrapper{
+.react-time-picker__wrapper {
     width: 60px !important;
     border: none !important;
     display: flex;
@@ -161,6 +167,12 @@
     justify-content: center;
 }
 
-.react-time-picker__inputGroup{
+.react-time-picker__inputGroup {
     width: 100% !important;
+}
+
+@media screen and (min-width: 768px) {
+    .dropOff__form {
+        margin-top: 0;
+    }
 }

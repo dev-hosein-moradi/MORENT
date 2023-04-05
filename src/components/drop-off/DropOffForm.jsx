@@ -1,5 +1,5 @@
 import React, { forwardRef, useState } from "react";
-import "./pickUpForm.css";
+import "../pick-up/pickUpForm.css";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -8,7 +8,7 @@ import TimePicker from "react-time-picker";
 import "react-time-picker/dist/TimePicker.css";
 import "react-clock/dist/Clock.css";
 
-const PickUpForm = () => {
+const DropOffForm = () => {
   const [startDate, setStartDate] = useState(new Date());
   const [value, onChange] = useState("10:00");
 
@@ -20,10 +20,10 @@ const PickUpForm = () => {
   ));
 
   return (
-    <div className="pickUp__form">
+    <div className="dropOff__form">
       <div className="form__title">
         <span></span>
-        <h3>Pick - Up</h3>
+        <h3>Drop - Off</h3>
       </div>
 
       <div className="form__inputs">
@@ -71,4 +71,4 @@ const PickUpForm = () => {
   );
 };
 
-export default PickUpForm;
+export default DropOffForm;
