@@ -126,3 +126,40 @@
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
+
+/* time item */
+.input__time {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+
+    padding: .1rem 1.5rem .1rem 1.5rem;
+}
+
+.time-input {
+    width: 25px;
+    height: 30px;
+}
+
+.time-input input {
+    outline: none;
+    height: 30px;
+    width: 20px;
+    padding: 0 .3rem;
+    font-size: 1.2rem;
+    color: #90A3BF;
+}
+
+.react-time-picker__wrapper{
+    width: 60px !important;
+    border: none !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.react-time-picker__inputGroup{
+    width: 100% !important;
+}

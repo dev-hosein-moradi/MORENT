@@ -4,15 +4,21 @@ import "./pickUpForm.css";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+import TimePicker from "react-time-picker";
+import "react-time-picker/dist/TimePicker.css";
+import "react-clock/dist/Clock.css";
+
 const PickUpForm = () => {
   const [startDate, setStartDate] = useState(new Date());
+  const [value, onChange] = useState("10:00");
+
   const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
     <button className="example-custom-input" onClick={onClick} ref={ref}>
       {value}
       <i className="arrow down"></i>
     </button>
   ));
-  
+
   return (
     <div className="pickUp__form">
       <div className="form__title">
@@ -46,7 +52,20 @@ const PickUpForm = () => {
           />
         </div>
 
-        <div className="input__time"></div>
+        <div className="input__time">
+          <label htmlFor="time-select">Date</label>
+
+          <TimePicker
+            className="time-input"
+            format="h:m"
+            clearIcon={null}
+            closeClock="false"
+            disableClock="true"
+            amPmAriaLabel="none"
+            onChange={onChange}
+            value={value}
+          />
+        </div>
       </div>
     </div>
   );
