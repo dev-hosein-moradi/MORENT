@@ -53,7 +53,7 @@ const PickUpForm = () => {
         </div>
 
         <div className="input__time">
-          <label htmlFor="time-select">Date</label>
+          <label htmlFor="time-select">Time</label>
 
           <TimePicker
             className="time-input"

@@ -62,7 +62,8 @@
 }
 
 .input__location label,
-.input__date label {
+.input__date label,
+.input__time label {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 2.4rem;
