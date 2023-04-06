@@ -232,6 +232,7 @@
     .Ads__wrapper {
         justify-content: space-between;
         /* width: 100%; */
+        width: 95vw;
     }
 
     .ads__box {
@@ -250,16 +251,17 @@
 
 @media screen and (min-width: 768px) {
     .Ads__wrapper {
-        padding: 2rem;
+        padding: 2rem 2.5rem;
 
         transform: translateY(0px);
+        width: 100vw;
     }
 }
 
 @media screen and (min-width: 850px) {
     .ads__box {
-        width: 380px;
-        min-width: 380px;
+        width: 360px;
+        min-width: 360px;
         height: 300px;
         min-height: 300px;
 
@@ -294,8 +296,8 @@
 
 @media screen and (min-width: 1024px) {
     .ads__box {
-        width: 480px;
-        min-width: 480px;
+        width: 470px;
+        min-width: 470px;
         height: 360px;
         min-height: 360px;
     }
@@ -321,8 +323,8 @@
 
 @media screen and (min-width: 1366px) {
     .ads__box {
-        width: 650px;
-        min-width: 650px;
+        width: 630px;
+        min-width: 630px;
         height: 360px;
         min-height: 360px;
     }
