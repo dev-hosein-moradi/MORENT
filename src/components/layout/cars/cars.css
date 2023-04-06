@@ -1,0 +1,49 @@
+.cars{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.cars__popular{
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.box__topbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+}
+
+.box__topbar h3{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+    color: var(--third-color);
+}
+
+.box__topbar button{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2.1rem;
+    height: 30px;
+
+    color: var(--main-color);
+    background: none;
+    border: none;
+}
+
+.box__items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
